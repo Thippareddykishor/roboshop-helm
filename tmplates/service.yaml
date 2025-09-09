@@ -7,5 +7,6 @@ spec:
   selector:
     component: {{ .Values.component_name }}
   ports:
-  - targetPort: {{ .Values.containerPort }}
-    port: {{ .Values.port }}
+  - port: {{ .Values.port }}
+    targetPort: {{ .Values.containerPort }}
+    
