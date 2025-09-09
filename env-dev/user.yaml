@@ -1,0 +1,10 @@
+component_name: user
+
+service:
+  port: "8080"
+  containerPort: "8080"
+
+configmap_data:
+  MONGO: "true"
+  MONGO_URL: "mongodb://mongodb-dev.kommanuthala.store:27017/users"
+  REDIS_URL: "redis://redis-dev.kommanuthala.store:6379"
