@@ -5,4 +5,5 @@ metadata:
 {{- with .Values.configmap_data  }}
 data:
   {{- toYaml . | | ident 2 }}
+{{- end  }}
  
