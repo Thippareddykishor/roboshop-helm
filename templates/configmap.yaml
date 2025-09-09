@@ -4,6 +4,6 @@ metadata:
   name: {{ .Values.component_name }}
 {{- with .Values.configmap_data  }}
 data:
-{{- toYaml . | indent 2 }}
+  {{- toYaml . | indent 2 }}
 {{- end  }}
  
