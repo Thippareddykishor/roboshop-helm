@@ -8,5 +8,3 @@ configmap_data:
   CART_ENDPOINT: "cart:8080"
   DB_HOST: "mysql-dev.kommanuthala.store"
 
-schema: 
-  enabled: flase

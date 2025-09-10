@@ -5,9 +5,6 @@ service:
   containerPort: "80"
   type: "LoadBalancer"
 
-schema: 
-  enabled: flase
-
 configmap_data:
   CATALOGUE_HOST: "catalogue"
   CATALOGUE_PORT: "8080"  

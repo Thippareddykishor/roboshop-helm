@@ -4,4 +4,4 @@ service:
   type: ClusterIP
 
 schema: 
-  enabled: flase
+  enabled: false
