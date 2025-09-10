@@ -11,7 +11,7 @@ spec:
         image: public.ecr.aws/w8x4g9h7/roboshop-v3/schema-load
         {{- with .Values.schema.env }}
         env:
-          {{ - toYaml . | nindent 10 }} 
+          {{- toYaml . | nindent 10 }} 
         {{- end}} }}
       restartPolicy: Never
   backoffLimit: 3
