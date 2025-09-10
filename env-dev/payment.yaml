@@ -9,6 +9,6 @@ configmap_data:
   CART_PORT: "8080"
   USER_HOST: "user"
   USER_PORT: "8080"
-  AMQP_HOST: rabbitmq-dev.kommanuthala.store
+  AMQP_HOST: "rabbitmq-dev.kommanuthala.store"
   AMQP_USER: roboshop 
   AMQP_PASS: roboshop123 
