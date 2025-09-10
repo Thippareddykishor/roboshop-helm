@@ -12,3 +12,6 @@ configmap_data:
   AMQP_HOST: "rabbitmq-dev.kommanuthala.store"
   AMQP_USER: roboshop 
   AMQP_PASS: roboshop123 
+
+schema: 
+  enabled: flase
