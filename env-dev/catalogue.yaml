@@ -8,15 +8,13 @@ configmap_data:
   MONGO: "true"
   MONGO_URL: "mongodb://mongodb-dev.kommanuthala.store:27017/catalogue" 
   CATALOGUE_HOST: "catalogue"
+  DB_TYPE: mongo
+  APP_GIT_URL: https://github.com/roboshop-devops-project-v3/catalogue
+  DB_HOST: mongodb-dev.kommanuthala.store
+  
 
 schema:
   enabled: true
-  env:
-    - name: DB_TYPE
-      value: mongo
-    - name: APP_GIT_URL
-      value: https://github.com/roboshop-devops-project-v3/catalogue
-    - name: DB_HOST
-      value: mongodb-dev.kommanuthala.store
-    - name: SCHEMA_FILE
-      value: db/master-data.js
+  jobs: 
+    - schema
+  extension: js
