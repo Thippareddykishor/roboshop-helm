@@ -9,4 +9,5 @@ configmap_data:
   CATALOGUE_PORT: "8080"
   REDIS_HOST: "redis-dev.kommanuthala.store"
 
-  
+schema: 
+  enabled: false
