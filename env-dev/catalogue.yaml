@@ -16,5 +16,5 @@ configmap_data:
 schema:
   enabled: true
   jobs: 
-    - schema
+    - master-data
   extension: js
