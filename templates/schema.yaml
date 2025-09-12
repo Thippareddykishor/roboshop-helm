@@ -15,7 +15,7 @@ spec:
             name: {{ $.Values.component_name }}
         env:
           - name: SCHEMA_FILE
-            value: db/{{ . }}.{{ .Values.schema.extension }}
+            value: db/{{ . }}.{{ $.Values.schema.extension }}
       restartPolicy: Never
   backoffLimit: 3
 {{ end }}
