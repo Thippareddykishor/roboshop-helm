@@ -19,5 +19,5 @@ spec:
             value: db/{{ . }}.{{ $.Values.schema.extension }}
       restartPolicy: Never
   backoffLimit: 3
-{{ end }}
+{{- end }}
 {{ end }}
