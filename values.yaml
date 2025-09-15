@@ -1,6 +1,7 @@
-shipping: 
-  config:
-    countries:
-      - USA
-      - UK
-      - India
+service: 
+  port: "8080"
+  containerPort: "8080"
+  type: ClusterIP
+
+schema: 
+  enabled: false
