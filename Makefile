@@ -8,7 +8,7 @@ debug:
 
 dev: 
 	git pull
-	for chart in frontend catalogue cart shipping payment user; do make env=dev component=$$chart ; done
+	for chart in frontend cart catalogue user payment shipping; do make env=dev component=$$chart; done
 
 uninstall:
 	git pull
