@@ -12,7 +12,6 @@ dev:
 
 uninstall:
 	git pull
-# 	helm uninstall frontend 
 	helm uninstall catalogue  
 	helm uninstall  cart  
 	helm uninstall  shipping  
