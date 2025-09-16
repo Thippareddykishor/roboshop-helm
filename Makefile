@@ -12,9 +12,9 @@ dev:
 
 uninstall:
 	git pull
-	helm uninstall -i frontend . -f env-dev/frontend.yaml 
-	helm uninstall -i catalogue . -f env-dev/catalogue.yaml 
-	helm uninstall -i cart . -f env-dev/cart.yaml 
-	helm uninstall -i shipping . -f env-dev/shipping.yaml 
-	helm uninstall -i payment . -f env-dev/payment.yaml 
-	helm uninstall -i user . -f env-dev/user.yaml 	
+	helm uninstall frontend 
+	helm uninstall catalogue  
+	helm uninstall  cart  
+	helm uninstall  shipping  
+	helm uninstall  payment  
+	helm uninstall  user  	
