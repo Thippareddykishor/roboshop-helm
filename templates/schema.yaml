@@ -9,7 +9,7 @@ spec:
     spec: 
       containers: 
       - name: schema-load
-        image: 740279881161.dkr.ecr.us-east-1.amazonaws.com/{ .Values.component_name }}-schema
+        image: 803817915930.dkr.ecr.us-east-1.amazonaws.com/{ .Values.component_name }}-schema
         envFrom: 
         - configMapRef:  
             name: {{ .Values.component_name }}
