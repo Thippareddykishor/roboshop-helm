@@ -32,10 +32,10 @@ metadata:
 #     cert-manager.io/cluster-issuer: letsencrypt
 spec:
   ingressClassName: nginx
-#   tls:
-#   - hosts:
-#     - {{ .Values.ingress.name }}
-#     secretName: {{ .Values.component_name }}-tls
+  tls:
+  - hosts:
+    - {{ .Values.ingress.name }}
+    secretName: {{ .Values.component_name }}-tls
   rules:
   - host: {{ .Values.ingress.name }}
     http:
