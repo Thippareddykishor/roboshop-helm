@@ -18,3 +18,7 @@ configmap_data:
   
 schema: 
   enabled: false
+
+ingress:
+  enabled: true
+  name: frontend-dev.kommanuthala.store
