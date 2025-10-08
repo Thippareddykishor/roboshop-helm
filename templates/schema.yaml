@@ -9,8 +9,7 @@ spec:
     spec: 
       containers: 
       - name: schema-load
-        image: 803817915930.dkr.ecr.us-east-1.amazonaws.com/{ .Values.component_name }}-schema
-        envFrom: 
+        image: 803817915930.dkr.ecr.us-east-1.amazonaws.com/{ .Values.component_name }}-schema:latest
         - configMapRef:  
             name: {{ .Values.component_name }}
       restartPolicy: Never
