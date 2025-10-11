@@ -12,7 +12,7 @@ spec:
           image: 803817915930.dkr.ecr.us-east-1.amazonaws.com/{{ .Values.component_name }}-schema:latest
           envFrom:
             - configMapRef:  
-              name: {{ .Values.component_name }}
+                name: {{ .Values.component_name }}
       restartPolicy: Never
   backoffLimit: 3
 {{ end }}
