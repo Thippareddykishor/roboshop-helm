@@ -28,8 +28,7 @@ metadata:
   name: {{ .Values.component_name }}
   annotations:
     nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
-
-#     cert-manager.io/cluster-issuer: letsencrypt
+    cert-manager.io/cluster-issuer: letsencrypt
 spec:
   ingressClassName: nginx
   tls:
