@@ -27,12 +27,12 @@ spec:
           livenessProbe:
             httpGet:
               path: /health
-              port: 8080
+              port: {{ .Values.service.containerPort }}
               initialDelaySeconds: 30
               periodSeconds:  3
           radinessProbe:
             httpGet: 
               path: /health
-              port: 8080
+              port: {{ .Values.service.containerPort }}
             initialDelaySeconds: 30
             periodSeconds: 3
