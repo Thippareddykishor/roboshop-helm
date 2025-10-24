@@ -5,6 +5,10 @@ metadata:
   labels:
     component: {{ .Values.component_name }}
 spec:
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailble: 1
   replicas: {{ .Values.replicas }}
   selector:
     matchLabels:
@@ -20,3 +24,15 @@ spec:
           envFrom:
             - configMapRef:
                 name: {{ .Values.component_name }}
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8080
+              initialDelaySeconds: 30
+              periodSeconds:  3
+          radinessProbe:
+            httpGet: 
+              path: /health
+              port: 8080
+            initialDelaySeconds: 30
+            periodSeconds: 3
