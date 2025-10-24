@@ -26,7 +26,7 @@ spec:
                 name: {{ .Values.component_name }}
           livenessProbe:
             httpGet:
-              path: /health
+              path: /health 
               port: {{ .Values.service.containerPort }}
             initialDelaySeconds: 30
             periodSeconds:  3
