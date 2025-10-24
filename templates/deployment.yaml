@@ -30,7 +30,7 @@ spec:
               port: {{ .Values.service.containerPort }}
               initialDelaySeconds: 30
               periodSeconds:  3
-          radinessProbe:
+          readinessProbe:
             httpGet: 
               path: /health
               port: {{ .Values.service.containerPort }}
