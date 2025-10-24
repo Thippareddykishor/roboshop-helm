@@ -28,8 +28,8 @@ spec:
             httpGet:
               path: /health
               port: {{ .Values.service.containerPort }}
-              initialDelaySeconds: 30
-              periodSeconds:  3
+            initialDelaySeconds: 30
+            periodSeconds:  3
           readinessProbe:
             httpGet: 
               path: /health
