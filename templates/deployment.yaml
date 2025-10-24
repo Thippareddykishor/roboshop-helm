@@ -24,15 +24,15 @@ spec:
           envFrom:
             - configMapRef:
                 name: {{ .Values.component_name }}
-          # livenessProbe:
-          #   httpGet:
-          #     path: /health 
-          #     port: {{ .Values.service.containerPort }}
-          #   initialDelaySeconds: 30
-          #   periodSeconds:  3
-          # readinessProbe:
-          #   httpGet: 
-          #     path: /health
-          #     port: {{ .Values.service.containerPort }}
-          #   initialDelaySeconds: 30
-          #   periodSeconds: 3
+          livenessProbe:
+            httpGet:
+              path: /health 
+              port: {{ .Values.service.containerPort }}
+            initialDelaySeconds: 30
+            periodSeconds:  3
+          readinessProbe:
+            httpGet: 
+              path: /health
+              port: {{ .Values.service.containerPort }}
+            initialDelaySeconds: 30
+            periodSeconds: 3
