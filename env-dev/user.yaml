@@ -11,3 +11,11 @@ configmap_data:
 
 schema: 
   enabled: false
+
+resources:
+  requests:
+    memory: ""
+    cpu: ""
+  limits:
+    memory: ""
+    cpu: ""
