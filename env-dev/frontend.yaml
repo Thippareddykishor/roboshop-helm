@@ -22,3 +22,11 @@ schema:
 ingress:
   enabled: true
   name: frontend-dev3.kommanuthala.store
+
+resources:
+  requests:
+    memory: "100Mi"
+    cpu: "150m"
+  limits:
+    memory: "200Mi"
+    cpu: "250m" 
