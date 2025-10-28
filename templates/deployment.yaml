@@ -8,7 +8,7 @@ spec:
   strategy:
     rollingUpdate:
       maxSurge: 1
-      maxUnavailable: 1
+      maxUnavailble: 1
   replicas: {{ .Values.replicas }}
   selector:
     matchLabels:
@@ -20,18 +20,18 @@ spec:
     spec:
       containers:
         - name: roboshop-{{ .Values.component_name }}
-          image: "803817915930.dkr.ecr.us-east-1.amazonaws.com/{{ .Values.component_name }}:{{ .Values.imageTag }}"
+          image: 803817915930.dkr.ecr.us-east-1.amazonaws.com/{{ .Values.component_name }}:{{ .Values.imageTag }}
           envFrom:
             - configMapRef:
                 name: {{ .Values.component_name }}
           livenessProbe:
             httpGet:
-              path: /health
+              path: /health 
               port: {{ .Values.service.containerPort }}
             initialDelaySeconds: 30
-            periodSeconds: 3
+            periodSeconds:  3
           readinessProbe:
-            httpGet:
+            httpGet: 
               path: /health
               port: {{ .Values.service.containerPort }}
             initialDelaySeconds: 30
