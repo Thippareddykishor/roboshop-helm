@@ -18,3 +18,11 @@ schema:
   jobs: 
     - master-data
   extension: js
+
+  resources:
+  requests:
+    memory: "50Mi"
+    cpu: "150m"
+  limits:
+    memory: "100Mi"
+    cpu: "250m"

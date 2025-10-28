@@ -15,7 +15,7 @@ schema:
 resources:
   requests:
     memory: "50Mi"
-    cpu: "250m"
+    cpu: "150m"
   limits:
     memory: "100Mi"
-    cpu: "500m"
+    cpu: "250m"
