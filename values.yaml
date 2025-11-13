@@ -9,4 +9,4 @@ schema:
 ingress:
   enabled: false
 
-replicas: 2
+replicas: 1
